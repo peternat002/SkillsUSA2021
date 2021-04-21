@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-class Proj1 {
+class Main {
   public static void main(String[] args) {
     System.out.println("\n--//Project 1- Food Program- Natalie Petersen//--");
     System.out.println("Welcome to my food truck!\n");
@@ -98,6 +98,13 @@ class Proj1 {
             allOrders += orderList + "\n";
 
             orderNum++;
+            
+            //this was added for redundancy's sake, making sure you can exit after youve calculated just in case.
+            System.out.println("Exit? (y)/(n)");
+                String exitAnswer = sc.nextLine();
+                if (exitAnswer.equalsIgnoreCase("y")){
+                  exit=true;
+                }
           }
           else if (ans.equalsIgnoreCase("clear")||ans.equals("2")){
             System.out.println("Order #" + orderNum + " cleared. Resetting... \n");
@@ -139,10 +146,11 @@ class Proj1 {
   //end of Main.java
 }
 
+
 /* test cases 
 Test 1:Enter 6 orders with Quantity 1 of each item. (calculate)
 Test 2: Enter a negative quantity or other invalid field inputso that an error is generated to the user
 Test3: Enter 4 more orders with Quantity 2 of all items, except for water where there are 4 waters.(calculate)
 Test 4: Enter invalid characters or letters into a field and show that it is handled.
 Test 5: Verify output displays all 10 orders for the day
-*/
+*/ 
