@@ -6,12 +6,11 @@ Grade Program Project
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Proj2 {
+class Main {
   public static void main(String[] args) {
     System.out.println("\n--//Project 2- Grade Program- Natalie Petersen//--\n");
 
-    // create each list of scores. add these arraylists to a bigger arraylist
-    // containing them (easier to step through later)
+    // create each list of scores. add these arraylists to a bigger arraylist containing them (easier to step through later)
     ArrayList<Double> progList = new ArrayList<Double>();
     ArrayList<Double> artList = new ArrayList<Double>();
     ArrayList<Double> sciList = new ArrayList<Double>();
@@ -82,14 +81,14 @@ class Proj2 {
           // end of accepted loop
         } // input is a number, either int or double. and is >0, <100
 
-        // adds score to the correct list.
+        // adds score to the correct class 
         double score = Double.parseDouble(answer.trim());
         classList.get(i).add(score);
       } // end of per-class loop
 
       System.out.println("\nOptions to continue: Calculate (or press 1), Clear (2), or Exit (3).");
-      // adapted from project 1 again.
 
+      // following is adapted from project 1 again.
       String ans = sc.nextLine().trim();
       boolean accepted = false;
 
@@ -155,7 +154,7 @@ class Proj2 {
       avg += num;
     }
     avg /= arr.size();
-    if (avg % 1 > 0.5) //if remainder is more than .5, round up.
+    if (avg % 1 >= 0.5) //if remainder is more than .5, round up.
       return (int) avg + 1;
     else
       return (int) avg;
