@@ -6,7 +6,7 @@ Grade Program Project
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Main {
+class Proj2 {
   public static void main(String[] args) {
     System.out.println("\n--//Project 2- Grade Program- Natalie Petersen//--\n");
 
