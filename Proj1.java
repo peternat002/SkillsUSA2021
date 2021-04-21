@@ -117,7 +117,7 @@ class Proj1 {
          }
           } 
 
-         System.out.println("\nTotal orders today: " + orderNum);
+         System.out.println("\nTotal orders today: " + (orderNum-1));
          System.out.println(allOrders);
          System.out.println("Total revenue: $" + totalSales);
          System.out.println("Thank you for visiting my nondescript food truck!");
