@@ -5,7 +5,7 @@
 
 import java.util.Scanner;
 
-class Main {
+class Proj1 {
   public static void main(String[] args) {
     System.out.println("\n--//Project 1- Food Program- Natalie Petersen//--");
     System.out.println("Welcome to my food truck!\n");
